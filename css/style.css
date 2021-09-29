@@ -1,0 +1,172 @@
+body { /* Body background color set to white */
+    background-color: white;
+  }
+
+  h1 { /* Heading 1 used in index page for "25 years of excellence" with margin on right and text alignment on right because of side naigation on left*/
+    color: black;
+    font-size: 45px;
+    font-family: Optima;
+    text-align: right;
+    margin-right: 800px;
+  }
+
+h4 { /* Heading 4 used in index page below "25 years of excellence" with margin on right and text alignment on right because of side naigation on left"*/
+  color: black;
+  font-size: 15px;
+  font-family: Optima;
+  text-align: right;
+  margin-right: 800px;
+}
+
+h3 { /* Heading 3 Used in about us page for "about us" with margin on left for side nav with text alignment on left as well*/
+  color: black;
+  font-size: 20px;
+  font-family: Optima;
+  text-align: left;
+  margin-left: 70px;
+}
+
+h5 { /* Heading 5 Used in about us page below "about us" with text alignment on left */
+  color: black;
+  font-size: 20px;
+  font-family: Optima;
+  text-align: left;
+
+}
+
+p {
+  color: black;
+  font-size: 15px;
+  font-family: Optima;
+  text-align: left;
+}
+
+
+
+p1 {
+  color: black;
+  font-size: 10px;
+  font-family: Optima;
+  text-align: left;
+  margin-left: 80px;
+}
+
+ul { /* List styling used in about us page with text alignment on left also a margin on left of 700px and list style position inside */
+  font-size: 15px;
+  color: black;
+  font-family: Optima;
+  text-align: left;
+  list-style-position: inside;
+  margin-left: 700px;
+
+}
+
+div.pr { /* Paragraph used in about us page below "about us" with margin on left */
+  width: 300px;
+  margin-left: 70px
+}
+
+
+.millimg { /* Styling for paragraph in Home/Index with Wind Mills background */
+  background-image: url('../imgs/bgmill.jpg');
+  height: 900px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#hp  { /* Partner logo in About styling ID with right and top margin and float on right */
+float: right;
+ margin-right: 150px;
+ margin-top: 20px;
+}
+
+#hp1 { /* Corp logo in About styling ID with top margin float on left */
+float: left;
+ margin-top: 90px;
+
+}
+
+table, th, td { /* Styling for table in Contact page  */
+  margin-left: 550px;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td { /* Styling for table heading and paragraph in Contact page  */
+  padding: 5px;
+  text-align: center;
+}
+
+
+  img { /* Styling for Image which is corp logo  */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.topnav { /* Top Nav bar styling declaration  */
+  width: 100%;
+  background-color: white;
+  overflow: auto;
+}
+
+.topnav a { /* Top Nav bar styling for buttons  */
+  margin-left: 360px;
+  float: left;
+  color: black;
+  text-align: center;
+  font-family: monospace;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover { /* Top Nav bar styling for button to turn black when page is selected */
+  background-color: #ccc;
+  color: black;
+}
+
+
+.topnav a.active { /* Top Nav bar styling for grey color when mouse on top  */
+  background-color: #262626;
+  color: white;
+}
+
+.center { /* Side Nav bar image to stay in middle when scrolled through */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
+.sidenav { /* Side Nav bar styling declaration */
+  height: 100%;
+  width: 270px;
+  position: fixed; /* Side Nav bar position is fixed */
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  overflow-x: hidden; /* Horizontal scroll off */
+  padding-top: 20px;
+}
+
+
+.main {
+  margin-left: 250px;  /* Margin on left for Side Nav bar in main section used in about us */
+  font-size: 28px;
+  padding: 0px 0px;
+}
+
+.main1 {
+  margin-left: 270px; /* Margin on left for Side Nav bar in main 1 section used in about us */
+  font-size: 28px;
+  padding: 0px 0px;
+}
