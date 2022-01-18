@@ -1,127 +1,94 @@
 <!--
-File: index.html
-GUI Assignment: Creating Your First Web Page
 Ibrahim Swati, UMass Lowell Computer Science, iswati@cs.uml.edu
 Copyright (c) 2021 by Ibrahim. All rights reserved. May be freely copied or excerpted for educational purposes with credit to the author.
-updated by IS on July 8, 2021 at 11:50 AM
 -->
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>About - Swati</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <script src="script.js"></script>
-  </head>
+<!--Language Declaration to English-->
+
+<head>
+  <meta charset="utf-8">
+  <title>About - Swati Corporation</title>
+  <!--Title of page: Home - Swati-->
+  <link rel="stylesheet" href="./css/style.css">
+  <!--Link to styling sheet-->
+  <script src="script.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+</head>
+
+
+  <!--Body-->
   <body>
-    <div class="topnav"> <!--Reference to Top Navigation bar class from Styling.css-->
+    <!--Body-->
+    <div class="topnav">
+      <!--Reference to Top Navigation bar class from Styling.css-->
+      <a href="./index.html">
+        <img src="./imgs/icon3.jpg" alt="Logo" class="topnavlogo">
+        </a>
+      <!--Image on top of page with defined height and width-->
+      <a class="topnavcontent" href="./index.html">Home</a>
+      <!--Link to Home/Index page-->
       <a class="active" href="./about.html">About</a>
-      <a href="./index.html">Home</a>
-      <a href="./contact.html">Contact</a>
+      <!--Link to About page-->
+
+      <div class="dropdown1">
+        <button class="dropbtn1" onclick="m1()">Services
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content1" id="myDropdown1">
+            <a href="./webdevelopment.html">Website development</a>
+            <a href="./mobiledevelopment.html">Mobile application development</a>
+            <a href="./cybersecurity.html">Cybersecurity</a>
+        </div>
+      </div>
+
+      <a class="topnavcontent" href="./contact.html">Contact</a>
+      <!--Link to Contact page-->
+
+      <div class="dropdown">
+        <button class="dropbtn">en-US</button>
+        <div class="dropdown-content" id="myDropdown">
+          <a href="https://www.swaticorporation.com">en-Global</a>
+        </div>
+      </div>
+
     </div>
 
-        <div class="sidenav">  <!--Reference to Side Navigation bar class from Styling.css-->
-          <img src="./imgs/icon2.jpg" alt="Logo" class="center">
-        </div>
-
-        <div class="main1"> <!--Refrence to main 1 class-->
-
-        <img src="./imgs/iconinv2.jpg" alt="Logo" height="213" width="392"> <!--Image on top of page with defined height and width-->
-    <br>
+    <div class="about">
 
 
-    <img src="./imgs/partner.jpg" alt="" width="250" height="530" id="hp"/> <!--Refrence to partner logo with defined height and width including another set of restrictions class hp from styling.css-->
 
-    <h3>About us</h3>
+    <br><br>
+    <h1 class="about-h1">About Us</h1>
 
-  <div class="pr"> <p>Founded in 1991 as Computer Data Management, the company today has expanded into various fields; electricity, security, information technology, investments, construction and real estate. Our largest branch provides the best solutions for renewable energy, electrical transmission & grids. Along with that, our experience in construction, real estate, railways and IT remains unmatched. Over the years we have completed or contributed in enormous projects worldwide such as the Burj Khalifa,   Gwadar-Jacobabad Railway and added over 1000MWs of wind power plants
-    Our offices are located in Pakistan, United Arab Emirates, Singapore, Turkey and Hong Kong and we are partnered with finest companies of the world including, but not limited to, PowerChina, China Civil Engineering & Construction Corporation (CCeCC-CRCC), Goldwind, General Electric, Siemens Gamesa, Vertiv (Emerson).
-    Our mission since day one remains to be the same, to provide the most sustainable form of development to the world, with 100% customer satisfaction.</p>
-</div>
+    <p class="about-m1">Founded in 1991 as Computer Data Management,<br>
+      the company since then has expanded into various fields;<br>
+      electricity, security, IT, investments, construction and real estate.<br>
+      <br>
+      Our US branch provides the best solutions for website development,<br>
+      Android/IOS application developement, & Cybersecurity. Over the years the <br>
+      company has completed or contributed in iconic projects.<br>
+      We are located in Greater Boston area, Massachusetts. <br><br>
+      Our mission since day one is to provide the most <br>
+      sustainable form of development to the world, <br>
+      with 100% customer satisfaction.</p>
 
-<br>
+   
 
-<img src="./imgs/iconinv.jpg" alt="" id="hp1"/> <!--Refrence to Corp logo-->
-<br>
-<h5>SALEEM SWATI GROUP OF COMPANIES</h5>
-
-<h5>Group of Companies:</h5>
-
-<ul>
-
-<li>Swati Corporation, Pakistan</li>
-<li>Swati Corporation DMCC, Dubai</li>
-<li>Swati Corporation, Hong Kong</li>
-<li>Swati Corporation. Turkey</li>
-<li>Euroko International PVT Ltd, Pakistan</li>
-<li>Euroko International Pte ltd, Singapore</li>
-<li>Swati Investments LLC, Dubai</li>
-<li>Interlink LLC, Dubai</li>
-</ul>
-
-<h5>Completed Renewable Energy Projects:</h5>
-
-<ul>
-<li>Sachal Wind Farm 50MW</li>
-<li>Act I Wind Farm 30MW</li>
-<li>Master I Wind Energy 50MW</li>
-<li>Harford Alternative Energy 50MW</li>
-<li>Jhimpir Wind Power Plant 50MW</li>
-<li>Sapphire Wind Farm 50MW</li>
-<li>Tricon Boston 150MW</li>
-<li>COMSATS Islamabad, Solar Energy 100kW</li>
-<li>Agriculture Department Punjab, 50+ solar tube wells</li>
-<li>+ Home and commercial solar installations</li>
-</ul>
-
-<h5>Ongoing Renewable Energy Projects:</h5>
-
-<ul>
-<li>Artistic Energy 50MW</li>
-<li>Indus Wind Energy Limited 50MW</li>
-<li>Lakeside Wind Farm 50MW</li>
-<li>Din Wind Farm 50MW</li>
-<li>Gul Ahmad Wind Farm 50MW</li>
-<li>Metro Wind Farm 60MW</li>
-<li>Tricom Wind Farm 50MW</li>
-<li>Liberty 1 Wind Farm 50MW</li>
-<li>Liberty Wind Farm 50MW</li>
-<li>NASDA Wind Farm 50MW</li>
-<li>Master II Wind Farm 60MW</li>
-<li>ACT II Wind Farm 50MW</li>
-</ul>
-
-<h5>Completed Aluminium & Glass Projects:</h5>
-
-<ul>
-<li>Burj Khalifa, Dubai (Interlink LLC)</li>
-<li>Capital Gate, Abu Dhabi (Interlink LLC)</li>
-<li>Sun Tower, Abu Dhabi (Interlink LLC)</li>
-<li>Marina Hotel, Abu Dhabi (Interlink LLC)</li>
-<li>+ Projects across the UAE</li>
-</ul>
-
-<h5>Ongoing Construction Projects:</h5>
-
-<ul>
-<li>Raiwind One, Lahore</li>
-<li>Askari 11 High Rises, Lahore</li>
-<li>Ongoing Transportation Projects</li>
-<li>Twin City Circular Railway, Pakistan Railways</li>
-<li>Abu Dhabi-Fujairah, Etihad Railways</li>
-<li>Leh Expressway, Pakistan</li>
-</ul>
-
-<h5>Restaurants:</h5>
-
-<ul>
-<li>Friends Cafe, Lahore</li>
-<li>Jurong Point, Singapore</li>
-<li>North Point, Singapore</li>
-</ul>
-
-</div>
+    </div>
 
   </body>
+
+  <div class="footer">
+    <p class="footer-h1">
+      Copyright 1991-2021 by Swati Corporation. All Rights Reserved.<br>
+      Developed by Ibrahim Swati @ Swati Corporation US
+    </p>
+  </div>
+
+
+
 </html>
+
+<!--End of File -->

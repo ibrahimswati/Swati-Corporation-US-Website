@@ -1,0 +1,182 @@
+<!--
+Ibrahim Swati, UMass Lowell Computer Science, iswati@cs.uml.edu
+Copyright (c) 2021 by Ibrahim. All rights reserved. May be freely copied or excerpted for educational purposes with credit to the author.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<!--Language Declaration to English-->
+
+<head>
+  <meta charset="utf-8">
+  <title>Home - Swati Corporation</title>
+  <!--Title of page: Home - Swati-->
+  <link rel="stylesheet" href="./css/style.css">
+  <!--Link to styling sheet-->
+  <script src="script.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+</head>
+
+
+<body>
+  <!--Body-->
+  <div class="topnav">
+    <!--Reference to Top Navigation bar class from Styling.css-->
+    <a href="./index.html">
+      <img src="./imgs/icon3.jpg" alt="Logo" class="topnavlogo">
+    </a>
+    <!--Image on top of page with defined height and width-->
+    <a class="active" href="./index.html">Home</a>
+    <!--Link to Home/Index page-->
+    <a class="topnavcontent" href="./about.html">About</a>
+    <!--Link to About page-->
+
+    <div class="dropdown1">
+      <button class="dropbtn1" onclick="m1()">Services
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content1" id="myDropdown1">
+        <a href="./webdevelopment.html">Website development</a>
+        <a href="./mobiledevelopment.html">Mobile application development</a>
+        <a href="./cybersecurity.html">Cybersecurity</a>
+      </div>
+    </div>
+
+    <a class="topnavcontent" href="./contact.html">Contact</a>
+    <!--Link to Contact page-->
+
+    <div class="dropdown">
+      <button class="dropbtn">en-US</button>
+      <div class="dropdown-content" id="myDropdown">
+        <a href="https://www.swaticorporation.com"> en-Global </a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="home">
+    <div class="home-1">
+      <!---->
+      <h1 class="main-h1">Software oriented company specializing in <br>
+        <div class="scroller">
+          <span style="font-weight: normal;
+      color      : white;
+      font-family: monospace;
+      font-size  : 20px;">
+            Website development & management<br />
+            Mobile application programming<br />
+            Network & Security services
+          </span>
+        </div>
+        We don't just sell but provide<br>
+        competitive rates & top notch services<br>
+        <a class="qbutton" href="./contact.html">Get a Quote</a>
+      </h1>
+
+
+
+      <img class="mainSlides" src="./imgs/Dart.jpg">
+      <img class="mainSlides" src="./imgs/Flutter.jpg">
+      <img class="mainSlides" src="./imgs/Firebase.jpg">
+      <img class="mainSlides" src="./imgs/Nessus.jpg">
+
+
+
+
+     <!-- <a class="pbutton" href="#">Why us?</a>-->
+
+    </div>
+
+    <div class="home-2">
+
+
+      <hr class="line-up-1">
+      <h1 class="home-2-h1">What differentiates us?</h1>
+
+      <hr class="line">
+
+      <img class="mainServices" src="./imgs/img18.jpg">
+
+      <p1 class="main-p1">
+        Our services just don't end at development,<br>
+        we provide after sale services to help manage your<br>
+        website or mobile application even after development<br>
+        
+        <br>
+        From small scale businesses to large scale businesses, <br>
+        we have a team that will fulfull your requirements<br>
+        <br>
+
+      </p1>
+
+
+    </div>
+
+    <div class="home-3">
+      <hr class="line-up-2">
+      <h1 class="home-2-h1">Why use our services? </h1>
+      <hr class="line1">
+
+
+      <p1 class="main-p2-1">
+        
+        Our website development team will also help after development to provide the best <br>
+        website management, SEO services, digital marketing, telemarketing, & cybersecurity.
+        <br>
+        
+
+
+      </p1>
+
+      <p1 class="main-p2">
+        Our step 5 step plan will ease,<br>
+        the process of development for<br> 
+        your website or mobile application.<br>
+      </p1>
+      <img class="mainServices2" src="./imgs/img19.jpg">
+      <p1 class="main-p2-2">
+
+      </p1>
+
+    </div>
+
+    <div class="home-4">
+
+
+    </div>
+
+  </div>
+
+
+
+
+  <div class="footer">
+    <p class="footer-h1">
+      Copyright 1991-2021 by Swati Corporation. All Rights Reserved.<br>
+      Developed by Ibrahim Swati @ Swati Corporation US
+    </p>
+  </div>
+
+
+</body>
+
+<script>
+  var myIndex = 0;
+  carousel();
+
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mainSlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) { myIndex = 1 }
+    x[myIndex - 1].style.display = "block";
+    setTimeout(carousel, 3000);
+  }
+</script>
+
+</html>
+
+<!--End of File -->

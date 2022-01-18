@@ -1,0 +1,190 @@
+<!--
+Ibrahim Swati, UMass Lowell Computer Science, iswati@cs.uml.edu
+Copyright (c) 2021 by Ibrahim. All rights reserved. May be freely copied or excerpted for educational purposes with credit to the author.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<!--Language Declaration to English-->
+
+<head>
+    <meta charset="utf-8">
+    <title>Android/IOS Development</title>
+    <!--Title of page: Home - Swati-->
+    <link rel="stylesheet" href="./css/style.css">
+    <!--Link to styling sheet-->
+    <script src="script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+</head>
+
+
+<body>
+    <!--Body-->
+    <div class="topnav">
+        <!--Reference to Top Navigation bar class from Styling.css-->
+        <a href="./index.html">
+            <img src="./imgs/icon3.jpg" alt="Logo" class="topnavlogo">
+            </a>
+        <!--Image on top of page with defined height and width-->
+        <a class="topnavcontent" href="./index.html">Home</a>
+        <!--Link to Home/Index page-->
+        <a class="topnavcontent" href="./about.html">About</a>
+        <!--Link to About page-->
+
+        <div class="dropdown1">
+            <button class="dropbtn1" onclick="m1()">Services
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content1" id="myDropdown1">
+                    <a href="./webdevelopment.html">Website development</a>
+                    <a href="./mobiledevelopment.html">Mobile application development</a>
+                    <a href="./cybersecurity.html">Cybersecurity</a>
+            </div>
+        </div>
+
+        <a class="topnavcontent" href="./contact.html">Contact</a>
+        <!--Link to Contact page-->
+
+        <div class="dropdown">
+            <button class="dropbtn">en-US</button>
+            <div class="dropdown-content" id="myDropdown">
+              <a href="https://www.swaticorporation.com">en-Global</a>
+            </div>
+          </div>
+      
+
+    </div>
+
+
+
+    <div class="mdev">
+
+        <h1 class="mdev-h1">Why us?</h1>
+
+
+        <p class="mdev-p1"> 
+            If you’re looking from where to start contact us <br>
+            we can get your company running from zero <br>
+            Provide transparency to customers with costs <br>
+            Cloud storage monthly cost including emails and 2FA <br>
+            Keep cost as low as the customer wants <br>
+
+        </p>
+
+        <section>
+            <img class="mySlides1" src="./imgs/img1.jpg" >
+            <img class="mySlides1" src="./imgs/img2.jpg" >
+            <img class="mySlides1" src="./imgs/img3.jpg" >
+            <img class="mySlides1" src="./imgs/img4.jpg" >
+        </section>
+
+
+    </div>
+
+
+    <div class="mdev1">
+
+        <h1 class="mdev1-h2">
+            What we offer?</h1>
+        <p class="mdev1-p2">
+            We offer services from planning of application<br>
+             to development of application <br>
+            Our services include Front-end developer,<br>
+             Back-end developer, Graphic designer<br>
+            We also offer SEO services, telemarketing, <br>
+            & digital marketing<br>  
+            <br>            
+            Using Flutter and Dart to build one app <br>
+            for both platforms (Android/IOS)<br>
+            Using Flutter will help us save time and costs <br>
+        </p>
+        
+
+        <section>
+            <img class="mySlides2" src="./imgs/img4.jpg" >
+            <img class="mySlides2" src="./imgs/img3.jpg" >
+            <img class="mySlides2" src="./imgs/img2.jpg" >
+            <img class="mySlides2" src="./imgs/img1.jpg" >
+        </section>
+
+    </div>
+
+    <div class="mdev1">
+
+      <h1 class="mdev1-h2">
+          Our services</h1>
+      <p class="mdev1-p2">
+          Our algorithm will help you easily calculate the cost<br>
+          of your application. Our algorithm uses basic costs we've<br>
+          set. To help understand we made a basic app and here's how<br>
+          the breakdown was:<br><br>
+          Login screen<br><br>
+          Registration screen<br><br>
+          Multifactor authentication (Optional)<br><br>
+          Home screen<br><br>
+          This basic app will cost 100$ with MfA and 75$ without. <br>
+          With each screen added the cost will range from 25$ to 100$<br>
+          depending on widgets, and customers requirements. A basic screen<br>
+          will cost 25$.
+          
+
+      </p>
+      
+
+      <section>
+          <img class="mySlides2" src="./imgs/img4.jpg" >
+          <img class="mySlides2" src="./imgs/img3.jpg" >
+          <img class="mySlides2" src="./imgs/img2.jpg" >
+          <img class="mySlides2" src="./imgs/img1.jpg" >
+      </section>
+
+  </div>
+
+    <div class="footer">
+        <p class="footer-h1">
+          Copyright 1991-2021 by Swati Corporation. All Rights Reserved.<br>
+          Developed by Ibrahim Swati @ Swati Corporation US
+        </p>
+      </div>
+  
+
+
+
+</body>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides2");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) { myIndex = 1 }
+  x[myIndex - 1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+
+
+var myIndex = 0;
+carousel1();
+
+function carousel1() {
+  var i;
+  var x = document.getElementsByClassName("mySlides1");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) { myIndex = 1 }
+  x[myIndex - 1].style.display = "block";
+  setTimeout(carousel1, 3000);
+}
+</script>
+
+</html>
+
+<!--End of File -->
