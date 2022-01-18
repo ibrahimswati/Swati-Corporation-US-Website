@@ -1,172 +1,1260 @@
-body { /* Body background color set to white */
-    background-color: white;
-  }
-
-  h1 { /* Heading 1 used in index page for "25 years of excellence" with margin on right and text alignment on right because of side naigation on left*/
-    color: black;
-    font-size: 45px;
-    font-family: Optima;
-    text-align: right;
-    margin-right: 800px;
-  }
-
-h4 { /* Heading 4 used in index page below "25 years of excellence" with margin on right and text alignment on right because of side naigation on left"*/
-  color: black;
-  font-size: 15px;
-  font-family: Optima;
-  text-align: right;
-  margin-right: 800px;
+body {
+  background-color: black;
 }
 
-h3 { /* Heading 3 Used in about us page for "about us" with margin on left for side nav with text alignment on left as well*/
-  color: black;
-  font-size: 20px;
-  font-family: Optima;
-  text-align: left;
-  margin-left: 70px;
-}
-
-h5 { /* Heading 5 Used in about us page below "about us" with text alignment on left */
-  color: black;
-  font-size: 20px;
-  font-family: Optima;
-  text-align: left;
-
-}
-
-p {
-  color: black;
-  font-size: 15px;
-  font-family: Optima;
-  text-align: left;
-}
-
-
-
-p1 {
-  color: black;
-  font-size: 10px;
-  font-family: Optima;
-  text-align: left;
-  margin-left: 80px;
-}
-
-ul { /* List styling used in about us page with text alignment on left also a margin on left of 700px and list style position inside */
-  font-size: 15px;
-  color: black;
-  font-family: Optima;
-  text-align: left;
-  list-style-position: inside;
-  margin-left: 700px;
-
-}
-
-div.pr { /* Paragraph used in about us page below "about us" with margin on left */
-  width: 300px;
-  margin-left: 70px
-}
-
-
-.millimg { /* Styling for paragraph in Home/Index with Wind Mills background */
-  background-image: url('../imgs/bgmill.jpg');
-  height: 900px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+/*
+.about{
+  background-image: url("../imgs/img9.jpg");
+  height: 470px;
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: 100%;
   position: relative;
+  z-index: 0;
+}
+*/
+
+.contact{
+  /*background-image: url("../imgs/img13.jpg");
+  height: 300px;
+  width: 700px;
+  background-position: left; 
+  background-repeat: no-repeat; 
+  background-size: 100%;
+  position: relative;
+  z-index: 0;*/
+  margin-left: 50px;
 }
 
-#hp  { /* Partner logo in About styling ID with right and top margin and float on right */
-float: right;
- margin-right: 150px;
- margin-top: 20px;
-}
-
-#hp1 { /* Corp logo in About styling ID with top margin float on left */
-float: left;
- margin-top: 90px;
-
-}
-
-table, th, td { /* Styling for table in Contact page  */
-  margin-left: 550px;
-  border: 1px solid black;
-  border-collapse: collapse;
-}
-th, td { /* Styling for table heading and paragraph in Contact page  */
-  padding: 5px;
-  text-align: center;
+.home{
+display: inline-block;
+background-image: linear-gradient(to right, black, rgb(43, 42, 42));
 }
 
 
-  img { /* Styling for Image which is corp logo  */
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
 
-.topnav { /* Top Nav bar styling declaration  */
-  width: 100%;
-  background-color: white;
-  overflow: auto;
+
+/* 
+Main page 
+*/
+
+.home-1{
+  display: inline-block;
+  margin-bottom: 130px;
+
 }
 
-.topnav a { /* Top Nav bar styling for buttons  */
-  margin-left: 360px;
-  float: left;
-  color: black;
-  text-align: center;
+.home-2{
+display: inline-block;
+width: 98%;
+border: 0px solid rgb(255, 255, 255) ;
+}
+
+.home-3{
+  margin-top: 50px;
+  display: inline-block;
+  width: 98%;
+  border: 0px solid rgb(250, 250, 250) ;
+}
+
+.main-h1 {
+  float      : left;
+  margin-left: 10px;
+  margin-top : 100px;
+  font-weight: normal;
+  color      : white;
   font-family: monospace;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+  font-size  : 20px;
+  line-height: 40px;
+  text-align : center;
 }
 
-.topnav a:hover { /* Top Nav bar styling for button to turn black when page is selected */
-  background-color: #ccc;
+.mainSlides {
+  float       : right;
+  margin-top: 150px;
+  margin-right: 150px;
+  height      : 100px;
+  width       : 400px;
+}
+
+
+.qbutton {
+  background-color: #414141;
+  border-radius: 25px;
+  border: 4px solid #414141;
+  color: white;
+  padding: 5px 50px;
+  text-align: center;
+  text-decoration: none;
+  float: left;
+  font-size: 14px;
+  font-family: monospace;
+  font-weight: normal;
+  margin-left: 300px;
+  margin-top : 50px;
+  cursor: pointer;
+}
+
+.pbutton {
+  background-color: #414141;
+  border-radius: 25px;
+  border: 4px solid #414141;
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  float: right;
+  font-size: 14px;
+  font-family: monospace;
+  font-weight: normal;
+  margin-right: 250px;
+  margin-top : 30px;
+  cursor: pointer;
+}
+
+.qbutton:hover{
+  background-color: white;
+  border: 4px solid #414141;
   color: black;
 }
 
+.pbutton:hover{
+  background-color: white;
+  border: 4px solid #414141;
+  color: black;
+}
 
-.topnav a.active { /* Top Nav bar styling for grey color when mouse on top  */
-  background-color: #262626;
+.main-p1{
+  margin-top: 50px;
+  margin-bottom: 30px;
+  margin-right: 60px;
+  float      : right;
+  font-weight: normal;
+  color      : white;
+  font-family: monospace;
+  font-size  : 20px;
+  line-height: 40px;
+  text-align : center;
+}
+
+.main-p2-1{
+  margin-top: 20px;
+  margin-bottom: 80px;
+  margin-left: 200px;
+  float      : left;
+  font-weight: normal;
+  color      : white;
+  font-family: monospace;
+  font-size  : 20px;
+  line-height: 40px;
+  text-align : center;
+}
+
+.main-p2{
+  margin-bottom: 30px;
+  margin-left: 40px;
+  float      : left;
+  font-weight: normal;
+  color      : white;
+  font-family: monospace;
+  font-size  : 20px;
+  line-height: 50px;
+  text-align : center;
+}
+
+.main-p2-2{
+  margin-top: 50px;
+  margin-bottom: 30px;
+  margin-left: 100px;
+  float      : left;
+  font-weight: normal;
+  color      : white;
+  font-family: monospace;
+  font-size  : 20px;
+  line-height: 50px;
+  text-align : center;
+}
+
+
+
+.mainServices{
+  float: left;
+  margin-top: 30px;
+  margin-left: 100px;
+  width      : 400px;
+  height      : 310px;
+
+}
+
+.mainServices2{
+  float: right;
+  margin-top: 20px;
+  margin-left: 20px;
+  width      : 850px;
+  height      : 130px;
+}
+
+hr.line{
+  margin-bottom: 80px;
+  border: 1px solid white;
+  animation: lineani 10s infinite;
+  border-left: 1px solid white;
+}
+
+hr.line1{
+  margin-bottom: 90px;
+  border: 1px solid white;
+  animation: lineani 10s infinite;
+  border-left: 1px solid white;
+}
+
+
+@keyframes lineani {
+  0% {
+    width: 0px;
+  }
+  25% {
+    width: 200px;
+  }
+  50% {
+    width: 400px;
+    border: 1px solid white;
+  }
+  75% {
+    width: 200px;
+  }
+  100% {
+    width: 0px;
+
+  }
+}
+
+hr.line-up-1{
+  border: 1px solid white;
+  margin-top: 90px;
+  animation: lineani 10s infinite;
+}
+
+hr.line-up-2{
+  border: 1px solid white;
+  margin-top: 50px;
+  animation: lineani 10s infinite;
+}
+
+
+.home-2-h1{
+  width: 100%;
+  float      : center;
+  font-weight: bold;
+  color      : white;
+  font-family: monospace;
+  font-size  : 35px;
+  text-align : center;
+}
+
+.scroller {
+  margin-bottom: 30px;
+  height: 30px;
+  line-height: 30px;
+  position: relative;
+  overflow: hidden;
+  width: 40em;
+  right: 185px;
+}
+
+.scroller > span {
+  position: absolute;
+  top: 0;
+  animation: slide 10s infinite;
+}
+
+
+@keyframes slide {
+  0% {
+    top: 0px;
+  }
+  25% {
+    top: -30px;
+  }
+  50% {
+    top: -60px;
+  }
+}
+
+.main-h2{
+  float      : left;
+  margin-left: 155px;
+  font-weight: normal;
+  color      : white;
+  font-family: monospace;
+  font-size  : 20px;
+  line-height: 40px;
+  text-align : center;
+}
+
+
+/* 
+About page 
+*/
+
+
+.about-m1 {
+  float         : center;
+  /*margin-left : 120px;*/
+  font-weight   : normal;
+  color         : white;
+  font-family   : monospace;
+  font-size     : 17px;
+  line-height   : 30px;
+  text-align    : center;
+  /*margin-right: 370px;*/
+
+}
+
+.about-h1 {
+  float         : center;
+  /*margin-right: 700px;*/
+  font-weight   : normal;
+  color         : white;
+  font-family   : monospace;
+  font-size     : 24px;
+  line-height   : 30px;
+  text-align    : center;
+}
+
+/* 
+Contact page 
+*/
+
+.contact-form{
+  margin-top: 100px;
+  z-index: 1;
+}
+
+form {
+  z-index: 1;
+  float       : right;
+  margin-right: 250px;
+}
+
+.form-control {
+  z-index: 1;
+  width        : 400px;
+  background   : transparent;
+  border       : none;
+  outline      : none;
+  border-bottom: 1px solid grey;
+  color        : white;
+  margin-bottom: 6px;
+
+}
+
+input {
+  z-index: 1;
+  height: 45px;
+}
+
+form .submit {
+  z-index: 1;
+  background  : rgb(54, 54, 54);
+  border-color: transparent;
+  color       : white;
+  height      : 50px;
+  margin-top  : 20px;
+}
+
+form .submit:hover {
+  background-color: white;
+  color           : black;
+}
+
+
+.contact-p1 {
+  float      : left;
+  margin-left: 100px;
+  font-weight: normal;
+  color      : white;
+  font-family: monospace;
+  font-size  : 17px;
+  line-height: 30px;
+  margin-top : 50px;
+  text-align : center;
+}
+
+.contact-mail:hover {
   color: white;
 }
 
-.center { /* Side Nav bar image to stay in middle when scrolled through */
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 150%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+.contact-mail {
+  font-family: monospace;
+  font-size  : 18px;
+  line-height: 30px;
+  color      : rgb(90, 90, 90);
+}
+
+/* 
+Web Development 
+*/
+
+/* 
+Web Development Animations
+*/
+
+@keyframes easyopen {
+  0% {
+    height: 100px;
+    opacity: 0.1;
+  }
+
+  25% {
+    height: 200px;
+    opacity: 0.2;
+  }
+
+  50% {
+    height: 300px;
+    opacity: 0.6;
+  }
+
+  75% {
+    height: 400px;
+    opacity: 0.8;
+  }
+
+  100% {
+    height: inherit;
+    opacity: 1;
+  }
+  
+}
+
+/* 
+W
+*/
+
+.webdevelop-display{
+  margin-bottom: 50px;
+  margin-top: 10px;
+  display: inline-block;
+  width: 100%;
+}
+
+.h1-display{
+  display: inline-block;
+  width: 100%;
+  height: 100px;
+  background-color: rgb(36, 36, 36);
+  margin-bottom: 50px;
+}
+
+.h1-display:hover + .webdevelop{
+  display: inline-block;
+  /*animation: easyopen 1s linear;*/
+
+}
+
+.webdevelop:hover{
+  display: inline-block;
+  /*animation: easyopen 1s linear;*/
+}
+
+.webdevelop {
+  display: inline-block;
+  width        : 100%;
+  height: inherit;
 }
 
 
-.sidenav { /* Side Nav bar styling declaration */
-  height: 100%;
-  width: 270px;
-  position: fixed; /* Side Nav bar position is fixed */
+.web-h1{
+  margin-top: 40px;
+  z-index: 10;
+  border: none;
+  font-weight : normal;
+  color       : white;
+  font-family : monospace;
+  font-size   : 17px;
+  text-align  : center;
+  margin-right: 20px;
+}
+
+
+.web-p1 {
+  z-index: 10;
+  float      : left;
+  margin-left: 70px;
+  font-weight: normal;
+  color      : white;
+  font-family: monospace;
+  font-size  : 17px;
+  line-height: 30px;
+  margin-top : 20px;
+  text-align : center;
+}
+
+.sdlcimg {
+  z-index: 10;
+  float       : right;
+  margin-right: 100px;
+}
+
+/*W1*/
+
+
+.webdevelop-display-1{
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.h2-display{
+  display: inline-block;
+  width: 100%;
+  height: 100px;
+  background-color: rgb(36, 36, 36);
+  margin-bottom: 50px;
+}
+
+.h2-display:hover + .webdevelop1{
+  display: inline-block;
+/*  animation: easyopen 1s linear;*/
+}
+
+.webdevelop1:hover{
+  display: inline-block;
+/*  animation: easyopen 1s linear;*/
+}
+
+.webdevelop1 {
+  margin-top: 30px;
+  display: inline-block;
+  width        : 100%;
+  height: inherit;
+
+}
+
+.web-h2{
+  margin-top: 40px;
+  z-index: 1;
+  float       : center;
+  font-weight : normal;
+  color       : white;
+  font-family : monospace;
+  font-size   : 17px;
+  text-align  : center;
+  margin-right: 20px;
+}
+
+.web-p2 {
+  float       : right;
+  font-weight : normal;
+  color       : white;
+  font-family : monospace;
+  font-size   : 17px;
+  line-height : 30px;
+  text-align  : center;
+  margin-right: 150px;
+  margin-top  : 100px;
+
+}
+
+.sdlcimg2 {
+  float      : left;
+  margin-left: 80px;
+}
+
+/*W2*/
+
+.webdevelop-display-2{
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.h3-display{
+  display: inline-block;
+  width: 100%;
+  height: 100px;
+  background-color: rgb(36, 36, 36);
+  margin-bottom: 50px;
+}
+
+.h3-display:hover + .webdevelop2{
+  display: inline-block;
+/*  animation: easyopen 1s linear;*/
+}
+
+.webdevelop2:hover{
+  display: inline-block;
+/*  animation: easyopen 1s linear;*/
+}
+
+.webdevelop2 {
+  display: inline-block;
+  width        : 100%;
+  height: inherit;
+  margin-top: 30px;
+}
+
+.web-h3{
+  margin-top: 40px;
+  z-index: 1;
+  float       : center;
+  font-weight : normal;
+  color       : white;
+  font-family : monospace;
+  font-size   : 17px;
+  text-align  : center;
+  margin-right: 20px;
+
+
+}
+
+.web-p3 {
+  float      : left;
+  font-weight: normal;
+  color      : white;
+  font-family: monospace;
+  font-size  : 17px;
+  line-height: 30px;
+  text-align : center;
+  margin-top : 80px;
+  margin-left: 200px;
+}
+
+.sdlcimg3 {
+  float       : right;
+  margin-right: 150px;
+}
+
+/*W3*/
+
+
+.webdevelop-display-3{
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.h4-display{
+  display: inline-block;
+  width: 100%;
+  height: 100px;
+  background-color: rgb(36, 36, 36);
+  margin-bottom: 50px;
+}
+
+.h4-display:hover + .webdevelop3{
+  display: inline-block;
+/*  animation: easyopen 1s linear;*/
+}
+
+.webdevelop3:hover{
+  display: inline-block;
+/*  animation: easyopen 1s linear;*/
+}
+
+.webdevelop3 {
+  display: inline-block;
+ width        : 100%;
+ height: inherit;
+ margin-top: 30px;
+}
+
+.web-h4{
+  margin-top: 40px;
+  z-index: 1;
+  float       : center;
+  font-weight : normal;
+  color       : white;
+  font-family : monospace;
+  font-size   : 17px;
+  text-align  : center;
+  margin-right: 20px;
+
+}
+
+.web-p4 {
+  float       : right;
+  font-weight : normal;
+  color       : white;
+  font-family : monospace;
+  font-size   : 17px;
+  line-height : 30px;
+  text-align  : center;
+  margin-right: 100px;
+}
+
+.sdlcimg4 {
+  float      : left;
+  margin-left: 100px;
+  margin-top: 5px;
+}
+
+/*W4*/
+
+.webdevelop-display-4{
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.h5-display{
+  display: inline-block;
+  width: 100%;
+  height: 100px;
+  background-color: rgb(36, 36, 36);
+  margin-bottom: 50px;
+}
+
+.h5-display:hover + .webdevelop4{
+  display: inline-block;
+/*  animation: easyopen 1s linear;*/
+}
+
+.webdevelop4:hover{
+  display: inline-block;
+/*  animation: easyopen 1s linear;*/
+}
+
+.webdevelop4 {
+  display: inline-block;
+ width        : 100%;
+ height: inherit;
+ margin-top: 30px;
+}
+
+.web-h5{
+  margin-top: 40px;
+  z-index: 1;
+  float       : center;
+  font-weight : normal;
+  color       : white;
+  font-family : monospace;
+  font-size   : 17px;
+  text-align  : center;
+  margin-right: 20px;
+
+}
+
+.web-p5 {
+  float       : left;
+  font-weight : normal;
+  color       : white;
+  font-family : monospace;
+  font-size   : 17px;
+  line-height : 30px;
+  text-align  : center;
+  margin-left: 50px;
+  margin-top  : 60px;
+}
+
+.sdlcimg5 {
+  float      : right;
+  margin-right: 80px;
+}
+
+/*W5*/
+
+.webdevelop-display-5{
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.h6-display{
+  display: inline-block;
+  width: 100%;
+  height: 100px;
+  background-color: rgb(36, 36, 36);
+  margin-bottom: 50px;
+}
+
+.h6-display:hover + .webdevelop5{
+  display: inline-block;
+/*  animation: easyopen 1s linear;*/
+}
+
+.webdevelop5:hover{
+  display: inline-block;
+  /*animation: easyopen 1s linear;*/
+}
+
+.webdevelop5 {
+  display: inline-block;
+ width        : 100%;
+ height: inherit;
+ margin-top: 30px;
+}
+
+.web-h6{
+  margin-top: 40px;
+  z-index: 1;
+  float       : center;
+  font-weight : normal;
+  color       : white;
+  font-family : monospace;
+  font-size   : 17px;
+  text-align  : center;
+  margin-right: 20px;
+
+}
+
+.web-p6 {
+  float       : right;
+  font-weight : normal;
+  color       : white;
+  font-family : monospace;
+  font-size   : 17px;
+  line-height : 30px;
+  text-align  : center;
+  margin-right: 150px;
+}
+
+.sdlcimg6 {
+  float      : left;
+  margin-left: 150px;
+  margin-top: 50px;
+}
+
+
+/* 
+Android/IoS application Development 
+*/
+
+.mdev {
+  display: inline-block;
+  width  : 100%;
+}
+
+.mdev-h1 {
+  float: left;
+  text-align  : center;
+  font-weight : normal;
+  color       : white;
+  font-family : monospace;
+  font-size   : 17px;
+  margin-right: 90px;
+  margin-left: 90px;
+  margin-top: 130px;
+}
+
+
+.mdev-p1 {
+  float: left;
+  text-align: center;
+  font-weight: normal;
+  color      : white;
+  font-family: monospace;
+  font-size  : 17px;
+  margin-top : 100px;
+}
+
+.mySlides1 {
+  float: right;
+  margin-right: 80px;
+  height      : 260px;
+  width       : 381px;
+}
+
+.mdev1 {
+  display: inline-block;
+  width  : 100%;
+}
+
+.mdev1-h2 {
+  float      : left;
+  text-align : left;
+  font-weight: normal;
+  color      : white;
+  font-family: monospace;
+  font-size  : 17px;
+  margin-top : 180px;
+  margin-left: 90px;
+  margin-right: 90px;
+}
+
+
+.mdev1-p2 {
+  float      : left;
+  text-align: center;
+  font-weight: normal;
+  color      : white;
+  font-family: monospace;
+  font-size  : 17px;
+  margin-top : 100px;
+}
+
+.mySlides2 {
+  float       : right;
+  margin-right: 80px;
+  margin-top: 100px;
+  height      : 260px;
+  width       : 381px;
+}
+
+
+/* 
+CyberSecurity
+*/
+
+.cb1 {
+  margin-top: 50px;
+  display: inline-block;
+  width  : 100%;
+}
+
+.cb-h1 {
+  float      : left;
+  margin-left: 200px;
+  margin-top: 50px;
+  font-weight: normal;
+  color      : white;
+  font-family: monospace;
+  font-size  : 20px;
+  line-height: 30px;
+  text-align : center;
+}
+
+.cb1img {
+  float       : right;
+  margin-right: 250px;
+  margin-top  : 50px;
+}
+
+.cb2 {
+  display: inline-block;
+  width  : 100%;
+  margin-top: 150px;
+}
+
+.cb-h2 {
+  margin-top: 150px;
+  margin-left: 450px;
+  float: left;
+  font-weight: normal;
+  color      : white;
+  font-family: monospace;
+  font-size  : 17px;
+  line-height: 30px;
+  text-align : center;
+}
+
+.cb-p2 {
+  margin-left: 80px;
+  float: left;
+  font-weight : normal;
+  color       : white;
+  font-family : monospace;
+  font-size   : 17px;
+  line-height : 30px;
+}
+
+.cb3{
+  display: inline-block;
+  width  : 100%;
+  margin-top: 150px;
+}
+
+.cb-h3{
+  margin-left: 80px;
+  float: left;
+  margin-left: 200px;
+  font-weight : normal;
+  color       : white;
+  font-family : monospace;
+  font-size   : 20px;
+  line-height : 30px;
+}
+
+.cb-h4{
+  margin-top: 50px;
+  margin-left: 200px;
+  float: left;
+  font-weight : normal;
+  color       : white;
+  font-family : monospace;
+  font-size   : 20px;
+  line-height : 30px;
+}
+
+.ul1 {
+  float      : left;
+  margin-left: 250px;
+  font-weight: normal;
+  color      : white;
+  font-family: monospace;
+  font-size  : 17px;
+  line-height: 30px;
+  text-align : left;
+  width      : 100%;
+
+}
+
+
+.cbp3-2{
+  margin-bottom: 50px;
+}
+
+.cbh3-2{
+  float: left;
+  margin-left: 200px;
+  font-weight : normal;
+  color       : white;
+  font-family : monospace;
+  font-size   : 17px;
+  line-height : 30px;
+}
+
+.cbh3-3{
+  float: left;
+  margin-left: 200px;
+  font-weight : normal;
+  color       : white;
+  font-family : monospace;
+  font-size   : 20px;
+  line-height : 30px;
+}
+
+.cb-home{
+  width: 100%;
+
+}
+
+
+.sidenav {
+  height: auto;
+  width: 160px;
+  position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: black;
-  overflow-x: hidden; /* Horizontal scroll off */
+  background-color: #111;
+  overflow-x: hidden;
   padding-top: 20px;
 }
 
-
-.main {
-  margin-left: 250px;  /* Margin on left for Side Nav bar in main section used in about us */
-  font-size: 28px;
-  padding: 0px 0px;
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
 }
 
-.main1 {
-  margin-left: 270px; /* Margin on left for Side Nav bar in main 1 section used in about us */
-  font-size: 28px;
-  padding: 0px 0px;
+.sidenav a:hover {
+  color: #f1f1f1;
 }
+
+
+
+
+
+/* 
+Top Navigation bar
+*/
+
+.topnav {
+  z-index: 100;
+  width           : 100%;
+  background-color: black;
+  overflow        : auto;
+}
+
+.topnav a {
+  display        : inline-block;
+  vertical-align : top;
+  color          : #414141;
+  font-family    : monospace;
+  text-decoration: none;
+  font-size      : 17px;
+
+}
+
+.topnav a:hover {
+  color: white;
+}
+
+.topnav a.active {
+  color: white;
+  margin-left: 125px;
+  margin-top: 50px;
+}
+
+.topnavlogo {
+  margin-left: 45px;
+  float: left;
+  height: 150px;
+  width: 250px;
+}
+
+.logobtn{
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+.topnavcontent{
+  margin-top: 50px;
+  margin-left: 10%;
+}
+
+/* 
+Services button
+*/
+
+.dropdown1 {
+  display        : inline-block;
+  vertical-align : top;
+  color          : #414141;
+  font-family    : monospace;
+  text-decoration: none;
+  font-size      : 17px;
+  margin-left: 10%;
+  margin-top: 45px;
+}
+
+.dropbtn1 {
+  background-color: black;
+  border          : none;
+  font-size       : 17px;
+  color           : #414141;
+  font-family     : monospace;
+}
+
+a:hover,
+.dropdown1:hover .dropbtn1,
+.dropbtn1:focus {
+  color: white;
+
+}
+
+.dropdown-content1 {
+  display: none;
+  position: absolute;
+  background    : white;
+  padding: 10px;
+  border-radius: 20px;
+  right: 475px;
+  z-index: 1;
+}
+
+.dropdown-content1 a {
+  display: block;
+  color: black;
+  font-size: 12px;
+  font-family: monospace;
+  padding: 12px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+
+}
+
+.dropdown-content1 a:hover {
+  background-color: black;
+}
+
+.show1 {
+  display: block;
+}
+
+
+
+/*
+Redirection to Swati Corp Global Button
+*/
+
+.dropdown {
+  margin-right: 40px;
+  float       : right;
+  overflow    : hidden;
+}
+
+.dropbtn {
+  cursor          : pointer;
+  background-color: black;
+  font-size       : 10px;
+  border          : none;
+  outline         : none;
+  color           : #414141;
+  font-family     : monospace;
+}
+
+a:hover,
+.dropdown:hover .dropbtn,
+.dropbtn:focus {
+  color: white;
+}
+
+.dropdown-content {
+  display       : none;
+  position      : absolute;
+  box-shadow    : 0px 8px 16px 0px rgba(151, 151, 151, 0.2);
+  background    : white;
+  overflow      : auto;
+  border-radius : auto;
+}
+
+
+.dropdown-content a {
+  position: relative;
+  display: block;
+  color: black;
+  font-size: 8px;
+  font-family: monospace;
+  padding: 12px;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(27, 27, 27);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+
+
+
+/*
+Footer
+*/
+
+.footer {
+  vertical-align  : bottom;
+  overflow        : auto;
+  position        : fixed;
+  bottom          : 0;
+  width           : 100%;
+  background-color: transparent;
+  text-align      : center;
+}
+
+.footer-h1 {
+  font-weight: normal;
+  font-family: monospace;
+  font-size  : 10px;
+  color      : white;
+}
+
+
+
+/*
+Mobile support
+*/
+
+@media screen and (max-width: 481px){
+
+
+
+
+}
+
